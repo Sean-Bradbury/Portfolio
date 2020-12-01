@@ -1,0 +1,113 @@
+// Variables
+$color-main-green: #5DB179;
+$color-grey: #BDBDBD;
+
+
+
+// Resets
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Utilities
+
+// Headings
+.lead {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: $color-grey;
+    padding-bottom: 1rem;
+}
+
+// Buttons
+.btn-primary {
+    box-shadow: 0px 0px 0px 4px $color-main-green inset;
+    padding: 1rem 1.5rem;
+    display: inline-flex;
+    margin-bottom: 1rem;    
+    background: linear-gradient(to right, $color-main-green 50%, #222222 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-position: left bottom;
+        .btn-text {
+            color: white;  
+          }
+    }
+
+    .btn-text {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 30px; 
+        color: $color-main-green;
+        transition: all 1s ease-out;
+        display: block;
+  }
+}
+
+
+
+
+  
+
+
+.website {
+    background-color: #222222;
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+}
+
+// Home
+#home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 10%;
+    .home-content {    
+        display: flex; 
+        justify-content: space-between;
+        width: 100%;   
+        &-left {
+        }
+        &-right {
+            .headshot-container {
+                border-radius: 50%;
+                transform: scale(0.9);
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    box-shadow: 0px 0px 10px 5px $color-main-green;
+                }
+                .headshot {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
