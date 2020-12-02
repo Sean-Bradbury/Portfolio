@@ -6,6 +6,9 @@
 
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+    },
      {
        resolve: `gatsby-plugin-prefetch-google-fonts`,
        options: {

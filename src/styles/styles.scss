@@ -66,12 +66,6 @@ button {
   }
 }
 
-
-
-
-  
-
-
 .website {
     background-color: #222222;
     color: #fff;
@@ -79,6 +73,57 @@ button {
     font-weight: 400;
     height: 100vh;
     width: 100vw;
+    position: relative;
+}
+
+// Nav
+#nav {
+    position: absolute;
+    background-image: url("/img/bg/double-bubble-dark.png");
+    height: 100%;
+    min-width: 100px;
+    &:hover {
+        &::after {
+            transition: all 0.5s ease-in-out;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            box-shadow: 0px 0px 30px $color-main-green;
+        }
+        .nav-links-container {
+            .nav-links {
+                transition: all 0.5s ease-in-out;
+                opacity: 1;
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        box-shadow: 0px 0px 20px $color-main-green;
+    }
+
+    .nav-links-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .nav-links {
+            opacity: 0.5;
+            .nav-link {
+                list-style: none;
+                position: relative;
+                left: -8px;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+        }
+    }
+
 }
 
 // Home
@@ -88,26 +133,35 @@ button {
     height: 100%;
     width: 70%;
     margin-left: 20%;
-    margin-right: 10%;
+    margin-right: 10%; 
+    position: relative;
     .home-content {    
         display: flex; 
         justify-content: space-between;
-        width: 100%;   
-        &-left {
-        }
+        width: 100%;
         &-right {
             .headshot-container {
                 border-radius: 50%;
                 transform: scale(0.9);
                 overflow: hidden;
                 transition: all 0.3s ease-in-out;
-                &:hover {
-                    box-shadow: 0px 0px 10px 5px $color-main-green;
-                }
                 .headshot {
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+    .next-page-link {
+        position: absolute;
+        right: 50%;
+        bottom: 10%;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $color-main-green;
+        .next-page-link-arrow {
+            position: absolute;
+            right: 15px;
+            top: 30px;
         }
     }
 }

@@ -70,6 +70,64 @@ button {
   font-weight: 400;
   height: 100vh;
   width: 100vw;
+  position: relative;
+}
+
+#nav {
+  position: absolute;
+  background-image: url("/img/bg/double-bubble-dark.png");
+  height: 100%;
+  min-width: 100px;
+}
+
+#nav:hover::after {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 30px #5DB179;
+          box-shadow: 0px 0px 30px #5DB179;
+}
+
+#nav:hover .nav-links-container .nav-links {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+#nav::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 20px #5DB179;
+          box-shadow: 0px 0px 20px #5DB179;
+}
+
+#nav .nav-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#nav .nav-links-container .nav-links {
+  opacity: 0.5;
+}
+
+#nav .nav-links-container .nav-links .nav-link {
+  list-style: none;
+  position: relative;
+  left: -8px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 #home {
@@ -83,6 +141,7 @@ button {
   width: 70%;
   margin-left: 20%;
   margin-right: 10%;
+  position: relative;
 }
 
 #home .home-content {
@@ -104,13 +163,23 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-#home .home-content-right .headshot-container:hover {
-  -webkit-box-shadow: 0px 0px 10px 5px #5DB179;
-          box-shadow: 0px 0px 10px 5px #5DB179;
-}
-
 #home .home-content-right .headshot-container .headshot {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#home .next-page-link {
+  position: absolute;
+  right: 50%;
+  bottom: 10%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #5DB179;
+}
+
+#home .next-page-link .next-page-link-arrow {
+  position: absolute;
+  right: 15px;
+  top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
