@@ -2,13 +2,11 @@ import React from "react";
 import Head from "../shared/head";
 import Nav from "../components/nav";
 import ButtonPrimary from "../components/button-primary";
-import NextPageLink from "../components/next-page-link";
 import Helmet from "react-helmet";
-import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="website">
       <Nav />
@@ -34,7 +32,6 @@ export default function Home() {
                   <p className="subtitle">Full Stack Developer / Paid Marketer</p>
                   <ButtonPrimary 
                     text="GET IN TOUCH"
-                    link="/contact/"
                   />
                 </div>
                 <div className="home-content-right">
@@ -43,14 +40,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              <Fade delay={5000}>              
-                <NextPageLink 
-                  linkText="about"
-                  linkLocation="/about/"
-                />
-              </Fade>
-
+              <div className="next-page-link">About <img className="next-page-link-arrow" src={"../../img/nav-icons/Arrow.png"} alt="Arrow" srcset="../../img/nav-icons/Arrow.png"/></div>
             </Slide>   
         </section>
       </Fade>

@@ -1,0 +1,23 @@
+// Variables
+$color-main-green: #5DB179;
+$color-grey: #BDBDBD;
+
+.next-page-link {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 35px;
+    transition: transform 0.5s ease-in;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &-text {
+        text-transform: uppercase;
+        color: $color-main-green;
+    }
+    &-arrow {
+        padding-top: 0.5rem;
+    }
+}

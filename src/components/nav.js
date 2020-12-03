@@ -1,17 +1,23 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
+import { Link } from "gatsby";
+import Styles from "../styles/components/nav/nav.css"
 
 export default function Nav(){
+
     return(
-        <nav id="nav">
-            <div className="nav-links-container">
-                <ul className="nav-links">
-                    <li className="nav-link"><img className="nav-icon" src={"../../img/nav-icons/home.svg"} alt="Sean Bradbury" srcset="../../img/nav-icons/home.svg"/></li>    
-                    <li className="nav-link"><img className="nav-icon" src={"../../img/nav-icons/about.svg"} alt="Sean Bradbury" srcset="../../img/nav-icons/about.svg"/></li>    
-                    <li className="nav-link"><img className="nav-icon" src={"../../img/nav-icons/skills.svg"} alt="Sean Bradbury" srcset="../../img/nav-icons/skills.svg"/></li>    
-                    <li className="nav-link"><img className="nav-icon" src={"../../img/nav-icons/portfolio.svg"} alt="Sean Bradbury" srcset="../../img/nav-icons/portfolio.svg"/></li>    
-                    <li className="nav-link"><img className="nav-icon" src={"../../img/nav-icons/contact.svg"} alt="Sean Bradbury" srcset="../../img/nav-icons/contact.svg"/></li>    
-                </ul>
+        <Slide left delay={1800}>
+            <div>        
+                <nav id="nav">
+                    <div className="nav-links-container">
+                        <Link className="nav-link" to="/"><img className="nav-link-image" src="../img/nav-icons/home.svg" alt=""/><div className="nav-link-text">Home</div></Link>
+                        <Link className="nav-link" to="/about/"><img className="nav-link-image" src="../img/nav-icons/about.svg" alt=""/><div className="nav-link-text">About</div></Link>
+                        <Link className="nav-link" to="/skills/"><img className="nav-link-image" src="../img/nav-icons/skills.svg" alt=""/><div className="nav-link-text">Skills</div></Link>
+                        <Link className="nav-link" to="/portfolio/"><img className="nav-link-image" src="../img/nav-icons/portfolio.svg" alt=""/><div className="nav-link-text">Portfolio</div></Link>
+                        <Link className="nav-link" to="/contact/"><img className="nav-link-image" src="../img/nav-icons/contact.svg" alt=""/><div className="nav-link-text">Contact</div></Link>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </Slide>
     )
 }
