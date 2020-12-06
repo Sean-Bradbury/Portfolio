@@ -1,6 +1,8 @@
 // Variables
 $color-main-green: #5DB179;
 $color-grey: #BDBDBD;
+$color-orange: #FF6F59;
+
 
 
 
@@ -26,6 +28,26 @@ a {
     text-decoration: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
 // Utilities
 
 // Headings
@@ -41,6 +63,19 @@ a {
     padding-bottom: 1rem;
 }
 
+.heading-green {
+    color: $color-main-green;
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
 // Buttons
 .btn-primary {
     box-shadow: 0px 0px 0px 4px $color-main-green inset;
@@ -52,11 +87,21 @@ a {
     background-position: right bottom;
     transition: all .5s ease-out;
     cursor: pointer;
+    color: $color-main-green;
+
+    a {
+        color: $color-main-green;
+        text-transform: uppercase;
+    }
 
     &:hover {
         background-position: left bottom;
         .btn-text {
-            color: white;  
+            color: #fff;  
+          }
+
+          a {
+              color: #fff;
           }
     }
 
@@ -80,10 +125,6 @@ a {
     position: relative;
 }    
 
-
-
-
-
 // Home
 #home {
     height: 100%;
@@ -91,20 +132,186 @@ a {
     margin-left: 20%;
     margin-right: 10%; 
     position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background: url("/img/bg/robin-hood-1.png") no-repeat right;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -14%;
+        z-index: -1;
+    }
+
+    
     .home-content {    
         display: flex; 
         align-items: center;
         justify-content: space-between;
         height: 100%;
         width: 100%;
+        position: relative;
         &-right {
+            z-index: 1;
             .headshot-container {
                 border-radius: 50%;
                 transform: scale(0.9);
                 overflow: hidden;
-                transition: all 0.3s ease-in-out;
                 .headshot {
                     transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
+
+// About
+#about {
+    height: 100%;
+    width: 85%;
+    margin-left: 15%;
+    position: relative;
+    overflow: hidden;
+
+    
+    .about-content {    
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background: url("/img/bg/arrow.png") no-repeat top;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        &-left {
+            margin-right: 1rem;
+            flex-basis: 100%;
+            padding-right: 5rem;
+        }
+        &-right {
+            z-index: 1;
+            position: relative;
+            flex-basis: 100%;
+            align-self: flex-start;
+            margin-top: 10%;
+
+            .experience-container {
+                background-image: url("/img/bg/webb-dark.png");
+                background-repeat: repeat;
+                margin-left: 1rem;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 5px;
+                    width: 100%;
+                    background-color: $color-orange;
+                    bottom: 0;
+                    left: 0;
+                }
+                .timeline-container {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    height: 400px;
+                    overflow-y: auto;
+                    .timeline-section {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem;
+                    }
+                    .timeline-date {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 2px;
+                            right: -40px;
+                            background-color: $color-grey;
+                        }
+                        &-from , &-to{
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 20px;
+                                height: 2px;
+                                right: -40px;
+                                background-color: $color-grey;
+                            }
+                        }
+                        &-to {
+                            &::after {
+                                bottom: 0px;
+                            }
+                        }
+                    }
+                }
+                .timeline-content {
+                    display: flex;
+                    justify-content: flex-end;
+                    &-text {
+                        padding-right: 1rem;
+                        color: $color-main-green;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Skills
+#skills {
+    height: 100%;
+    width: 85%;
+    margin-left: 15%;
+    position: relative;
+    overflow: hidden;
+
+    
+    .skills-content {    
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        &-left {
+            margin-right: 1rem;
+            flex-basis: 100%;
+            padding-right: 5rem;
+        }
+        &-right {
+            z-index: 1;
+            position: relative;
+            flex-basis: 100%;
+
+            .skills-container {
+                background-image: url("/img/bg/webb-dark.png");
+                background-repeat: repeat;
+                margin-left: 1rem;
+                position: relative;
+                padding: 2rem;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 5px;
+                    width: 100%;
+                    background-color: $color-orange;
+                    bottom: 0;
+                    left: 0;
                 }
             }
         }

@@ -1,12 +1,29 @@
-import React from "react";
-import Head from "../shared/head";
+import React, { useState } from "react";
+import Head from "../shared/Head";
 import Nav from "../components/nav";
 import ButtonPrimary from "../components/button-primary";
+import NextPageLink from "../components/Next-page-link";
+import TimelineSection from "../components/timeline-section";
+import TimeLineData from "../data/timeline-data";
+import Tabs from "../components/Tabs";
 import Helmet from "react-helmet";
+import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
-export default function About() {
+export default function Home() {
+
+  function createTimelineItem(item) {
+    return (
+      <TimelineSection 
+        key= {item.id}
+        dateFrom= {item.dateFrom}
+        dateTo= {item.dateTo}
+        contentText= {item.contentText}
+      />
+    );
+  }
+
   return (
     <div className="website">
       <Nav />
@@ -14,36 +31,77 @@ export default function About() {
         title="Sean Bradbury | Full Stack Web Developer"
         metaDesc="Full Stack Web Developer, passionate about learning and development."
       />
-      <Fade delay={1200}>
-        <section id="home">
-            <Slide top delay={1400}>
-              <div className="home-content">         
-                <div className="home-content-left">
-                  <h1 className="lead">
-                    Hi,
-                    <br></br>
-                    I'm Sean,
-                    <br></br>
-                    Web Deveoper,
-                    <br></br>
-                    from Nottingham
-                    <br></br>
+        <section id="about">
+          <Fade delay={500}>
+              <div className="about-content">                       
+                <div className="about-content-left">
+                  <h1 className="heading-green">
+                    About
                   </h1>
-                  <p className="subtitle">Full Stack Developer / Paid Marketer</p>
-                  <ButtonPrimary 
-                    text="GET IN TOUCH"
-                  />
+                  <p>
+                    Hi my name’s Sean Bradbury, I originally started my career in the web industry 10 years ago. Working a large portion of this as a paid marketer. 
+                    <br />
+                    <br />
+                    I noticed through creating high converting landing pages and wordpress websites for friends & family  that I had a passion for design. A yearning for a more creative work began and I started my web development journey.
+                    <br />
+                    <br />
+                    My analytical/logical side loves to code and my artistic side loves to create. I revel in the challenges of problem solving and I’m excited by the continual growth availble through this profession.
+                    <br />
+                    <br />
+                  </p>
                 </div>
-                <div className="home-content-right">
-                  <div className="headshot-container">
-                    <img className="headshot" src={"../../img/sean-bradbury-headshot.jpg"} alt="Sean Bradbury" srcset="../../img/sean-bradbury-headshot.jpg"/>
+                <div className="about-content-right">
+                  <div className="experience-container">
+                  <Tabs> 
+                    <div label="Personal"> 
+                      <p>Personal</p>
+                      <div className="personal-item">
+                        <div className="personal-item-content">
+                          <p>The Complete 2020 Web Development Bootcamp - Course (55hrs)</p>
+                        </div>
+                        <div className="personal-item-links">
+                          <button className="btn-primary"><a href="\pdf\The-Web-Development-Bootcamp.pdf">Certificate</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Course Link</a></button>
+                        </div>
+                      </div>
+                      <div className="personal-item">
+                        <div className="personal-item-content">
+                          <p>Modern HTML & CSS From The Beginning - Course (21hrs)</p>
+                        </div>
+                        <div className="personal-item-links">
+                          <button className="btn-primary"><a href="\pdf\Modern-HTML&CSS-From-The-Begining.pdf">Certificate</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank">Course Link</a></button>
+                        </div>
+                      </div>
+                      <div className="personal-item">
+                        <div className="personal-item-content">
+                          <p>Web Design For Web Developers - Course (3hrs)</p>
+                        </div>
+                        <div className="personal-item-links">
+                          <button className="btn-primary"><a href="\pdf\Web-Design-For-Web-Developers.pdf">Certificate</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank">Course Link</a></button>
+                        </div>
+                      </div>
+                      
+                    </div> 
+                    <div label="Work"> 
+                      <p>Experience</p>
+                      <div className="timeline-container">
+                        {TimeLineData.map(createTimelineItem)}
+                      </div>
+                    </div>
+                  </Tabs> 
                   </div>
                 </div>
               </div>
-              <div className="next-page-link">About <img className="next-page-link-arrow" src={"../../img/nav-icons/Arrow.png"} alt="Arrow" srcset="../../img/nav-icons/Arrow.png"/></div>
-            </Slide>   
+              <Fade delay={4000}>  
+                <NextPageLink 
+                  linkText="skills"
+                  linkLocation="/skills/"
+                />
+              </Fade>
+            </Fade> 
         </section>
-      </Fade>
     </div>
   )
   

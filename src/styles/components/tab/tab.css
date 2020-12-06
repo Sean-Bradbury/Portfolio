@@ -1,0 +1,40 @@
+.tabs {
+  position: relative;
+}
+
+.tabs .tab-list {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 50px;
+  list-style: none;
+  top: -50px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs .tab-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 16px;
+  background-color: #303030;
+}
+
+.tabs .tab-list-item:hover {
+  opacity: 0.8;
+}
+
+.tabs .tab-list-active {
+  background-color: #5DB179;
+}
+
+.tabs .tab-content {
+  padding: 2rem;
+}
+/*# sourceMappingURL=tab.css.map */

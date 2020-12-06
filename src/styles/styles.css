@@ -20,6 +20,26 @@ a {
   text-decoration: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .lead {
   font-size: 2.2rem;
   padding-bottom: 1rem;
@@ -30,6 +50,19 @@ a {
   font-style: italic;
   color: #BDBDBD;
   padding-bottom: 1rem;
+}
+
+.heading-green {
+  color: #5DB179;
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.ml-1 {
+  margin-left: 1rem;
 }
 
 .btn-primary {
@@ -47,6 +80,12 @@ a {
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   cursor: pointer;
+  color: #5DB179;
+}
+
+.btn-primary a {
+  color: #5DB179;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {
@@ -54,7 +93,11 @@ a {
 }
 
 .btn-primary:hover .btn-text {
-  color: white;
+  color: #fff;
+}
+
+.btn-primary:hover a {
+  color: #fff;
 }
 
 .btn-primary .btn-text {
@@ -85,6 +128,17 @@ a {
   position: relative;
 }
 
+#home::after {
+  content: "";
+  position: absolute;
+  background: url("/img/bg/robin-hood-1.png") no-repeat right;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: -14%;
+  z-index: -1;
+}
+
 #home .home-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +151,11 @@ a {
           justify-content: space-between;
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+#home .home-content-right {
+  z-index: 1;
 }
 
 #home .home-content-right .headshot-container {
@@ -104,12 +163,210 @@ a {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 #home .home-content-right .headshot-container .headshot {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#about {
+  height: 100%;
+  width: 85%;
+  margin-left: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
+#about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#about .about-content::after {
+  content: "";
+  position: absolute;
+  background: url("/img/bg/arrow.png") no-repeat top;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#about .about-content-left {
+  margin-right: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-right: 5rem;
+}
+
+#about .about-content-right {
+  z-index: 1;
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10%;
+}
+
+#about .about-content-right .experience-container {
+  background-image: url("/img/bg/webb-dark.png");
+  background-repeat: repeat;
+  margin-left: 1rem;
+  position: relative;
+}
+
+#about .about-content-right .experience-container::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #FF6F59;
+  bottom: 0;
+  left: 0;
+}
+
+#about .about-content-right .experience-container .timeline-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 400px;
+  overflow-y: auto;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-date::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  right: -40px;
+  background-color: #BDBDBD;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-date-from, #about .about-content-right .experience-container .timeline-container .timeline-date-to {
+  position: relative;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-date-from::after, #about .about-content-right .experience-container .timeline-container .timeline-date-to::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  right: -40px;
+  background-color: #BDBDBD;
+}
+
+#about .about-content-right .experience-container .timeline-container .timeline-date-to::after {
+  bottom: 0px;
+}
+
+#about .about-content-right .experience-container .timeline-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#about .about-content-right .experience-container .timeline-content-text {
+  padding-right: 1rem;
+  color: #5DB179;
+}
+
+#skills {
+  height: 100%;
+  width: 85%;
+  margin-left: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
+#skills .skills-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#skills .skills-content-left {
+  margin-right: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-right: 5rem;
+}
+
+#skills .skills-content-right {
+  z-index: 1;
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#skills .skills-content-right .skills-container {
+  background-image: url("/img/bg/webb-dark.png");
+  background-repeat: repeat;
+  margin-left: 1rem;
+  position: relative;
+  padding: 2rem;
+}
+
+#skills .skills-content-right .skills-container::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #FF6F59;
+  bottom: 0;
+  left: 0;
 }
 /*# sourceMappingURL=styles.css.map */

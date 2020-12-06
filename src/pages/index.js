@@ -1,8 +1,8 @@
 import React from "react";
-import Head from "../shared/head";
+import Head from "../shared/Head";
 import Nav from "../components/nav";
 import ButtonPrimary from "../components/button-primary";
-import NextPageLink from "../components/next-page-link";
+import NextPageLink from "../components/Next-page-link";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import Slide from "react-reveal/Slide";
@@ -16,10 +16,10 @@ export default function Home() {
         title="Sean Bradbury | Full Stack Web Developer"
         metaDesc="Full Stack Web Developer, passionate about learning and development."
       />
-      <Fade delay={1200}>
+      <Fade delay={400}>
         <section id="home">
-            <Slide top delay={1400}>
-              <div className="home-content">         
+            <Slide top delay={500}>
+              <div className="home-content">                       
                 <div className="home-content-left">
                   <h1 className="lead">
                     Hi,
@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <Fade delay={5000}>              
+              <Fade delay={4000}>              
                 <NextPageLink 
                   linkText="about"
                   linkLocation="/about/"

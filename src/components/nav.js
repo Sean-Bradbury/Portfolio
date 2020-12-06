@@ -3,10 +3,10 @@ import Slide from "react-reveal/Slide";
 import { Link } from "gatsby";
 import Styles from "../styles/components/nav/nav.css"
 
-export default function Nav(){
+export default function Nav(props){
 
     return(
-        <Slide left delay={1800}>
+        <Slide left delay={700}>
             <div>        
                 <nav id="nav">
                     <div className="nav-links-container">

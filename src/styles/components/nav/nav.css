@@ -1,15 +1,16 @@
 #nav {
   position: fixed;
   background-image: url("/img/bg/double-bubble-dark.png");
+  background-repeat: repeat;
   height: 100vh;
   width: 100px;
   z-index: 5;
   -webkit-box-shadow: 0px 0px 20px #5DB179;
           box-shadow: 0px 0px 20px #5DB179;
-  -webkit-transition: width 2s ease-in-out, -webkit-box-shadow 1s ease-in-out;
-  transition: width 2s ease-in-out, -webkit-box-shadow 1s ease-in-out;
-  transition: width 2s ease-in-out, box-shadow 1s ease-in-out;
-  transition: width 2s ease-in-out, box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
 #nav .nav-links-container {
@@ -28,8 +29,6 @@
           align-items: center;
   height: 100%;
   padding-left: 20px;
-  -webkit-transition: padding 2s ease-in-out;
-  transition: padding 2s ease-in-out;
   overflow: hidden;
 }
 
@@ -49,8 +48,8 @@
 }
 
 #nav .nav-links-container .nav-link .nav-link-text {
-  -webkit-transition: opacity 1.5s ease-in-out 1s, visibility 1.5s ease-in 1s;
-  transition: opacity 1.5s ease-in-out 1s, visibility 1.5s ease-in 1s;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   visibility: hidden;
   color: #BDBDBD;
   text-transform: uppercase;
