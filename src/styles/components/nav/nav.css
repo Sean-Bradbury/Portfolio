@@ -48,15 +48,16 @@
 }
 
 #nav .nav-links-container .nav-link .nav-link-text {
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
   visibility: hidden;
   color: #BDBDBD;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   opacity: 0;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #nav .nav-links-container .nav-link .nav-link-image {

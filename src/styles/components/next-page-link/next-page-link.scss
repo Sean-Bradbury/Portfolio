@@ -10,6 +10,7 @@ $color-grey: #BDBDBD;
     align-items: center;
     bottom: 35px;
     transition: transform 0.5s ease-in;
+    z-index: 5;
     &:hover {
         transform: scale(1.1);
     }

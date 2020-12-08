@@ -11,6 +11,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #222222;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    color: #fff;
 }
 
 h1 {
@@ -185,10 +189,12 @@ p {
         &::after {
             content: "";
             position: absolute;
-            background: url("/img/bg/arrow.png") no-repeat top;
+            background-image: url("/img/bg/arrow.png");
+            background-repeat: no-repeat;
+            background-position: top;
             height: 100%;
             width: 100%;
-            z-index: -1;
+            z-index: 0;
         }
         &-left {
             margin-right: 1rem;
@@ -269,7 +275,6 @@ p {
             }
         }
     }
-
 }
 
 // Skills
@@ -288,10 +293,34 @@ p {
         height: 100%;
         width: 100%;
         position: relative;
+
         &-left {
             margin-right: 1rem;
             flex-basis: 100%;
             padding-right: 5rem;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 40%;
+                background-color: $color-grey;
+                opacity: 0.2;
+                top: -3rem;
+                right: 5rem;
+                transform: rotate(-25deg);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 40%;
+                background-color: $color-grey;
+                opacity: 0.2;
+                bottom: -3rem;
+                right: 5rem;
+                transform: rotate(25deg);
+            }
         }
         &-right {
             z-index: 1;
@@ -313,8 +342,145 @@ p {
                     bottom: 0;
                     left: 0;
                 }
+                .skills-row {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-bottom: 1rem;
+                    .skills-row-item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-left: 2rem;
+                        height: 70px;
+                        width: 65px;
+                        .skills-logo {
+                            height: 30px;
+                        }
+                    }
+                }
             }
         }
     }
 
+}
+
+// Portfolio
+    #portfolio {
+        height: 100%;
+        width: 85%;
+        margin-left: 15%;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 100px;
+        .portfolio-content {
+            margin-top: 5%;
+            padding-right: 5%;
+            height: 100%;
+            color: #fff;
+            
+            .portfolio-items {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 3rem;
+                padding: 3rem 0rem;
+            }
+        }   
+    }
+
+    // Contact
+.contact-container {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+
+    #contact {
+        height: 100%;
+        width: 85%;
+        margin-left: 15%;
+        position: relative;
+        overflow: hidden;        
+        .contact-content {    
+            display: flex; 
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 15%;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("/img/bg/aeroplanes.png");
+                background-repeat: no-repeat;
+                background-position: top;
+                top: -210px;
+                height: 200px;
+                width: 100%;
+                z-index: 0;
+            }
+            &-left {
+                margin-right: 1rem;
+                flex-basis: 100%;
+                padding-right: 3rem;
+            }
+            &-right {
+                z-index: 1;
+                position: relative;
+                flex-basis: 100%;
+
+                .contact-form-container {
+                    background-image: url("/img/bg/webb-dark.png");
+                    background-repeat: repeat;
+                    margin-left: 1rem;
+                    position: relative;
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 5px;
+                        width: 100%;
+                        background-color: $color-orange;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 2rem;
+                        label {
+                            padding-bottom: 0.5rem;
+                            color: #fff;
+                            font-style: italic;
+                            font-size: 1rem;
+                        }
+                        input {
+                            background-color: #2d2d2d;
+                            border: none;
+                            padding: 0.5rem;
+                            color: #fff;
+                        }
+                        textarea {
+                            background-color: #2d2d2d;
+                            border: none;
+                            padding: 0.5rem;
+                            color: #fff;
+                            resize: vertical;
+                        }
+                    }
+                    .btn-primary {
+                        color: $color-main-green;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }

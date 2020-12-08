@@ -16,6 +16,7 @@
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  z-index: 5;
 }
 
 .next-page-link:hover {

@@ -32,7 +32,7 @@ export default function Home() {
         metaDesc="Full Stack Web Developer, passionate about learning and development."
       />
         <section id="about">
-          <Fade delay={500}>
+          <Fade>
               <div className="about-content">                       
                 <div className="about-content-left">
                   <h1 className="heading-green">
