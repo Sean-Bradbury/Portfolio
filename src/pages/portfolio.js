@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/nav";
-import NextPageLink from "../components/Next-page-link";
-import Portfolio from "../components/portfolio-item";
+import Nav from "../components/Nav";
+import NextPageLink from "../components/NextPageLink";
+import Portfolio from "../components/PortfolioItem";
 import Fade from "react-reveal/Fade";
 import PortfolioData from "../data/portfolio-data";
 

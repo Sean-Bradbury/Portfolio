@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/nav";
-import ButtonPrimary from "../components/button-primary";
-import NextPageLink from "../components/Next-page-link";
-import TimelineSection from "../components/timeline-section";
+import Nav from "../components/Nav";
+import NextPageLink from "../components/NextPageLink";
+import TimelineSection from "../components/TimelineSection";
 import TimeLineData from "../data/timeline-data";
 import Tabs from "../components/Tabs";
-import Helmet from "react-helmet";
-import { Link } from "gatsby";
-import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
 export default function Home() {

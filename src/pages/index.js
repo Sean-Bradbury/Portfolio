@@ -1,10 +1,8 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/nav";
-import ButtonPrimary from "../components/button-primary";
-import NextPageLink from "../components/Next-page-link";
-import Helmet from "react-helmet";
-import { Link } from "gatsby";
+import Nav from "../components/Nav";
+import ButtonPrimary from "../components/ButtonPrimary";
+import NextPageLink from "../components/NextPageLink";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 

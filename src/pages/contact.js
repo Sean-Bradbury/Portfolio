@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/nav";
+import Nav from "../components/Nav";
 import ContactForm from "../components/ContactForm";
-import Helmet from "react-helmet";
 import Fade from "react-reveal/Fade";
 
 export default function Contact() {
@@ -24,6 +23,7 @@ export default function Contact() {
                   <p>
                     If you’re looking for a passionate web developer to work with you on your project, please get in touch. I’d love to hear from you.
                   </p>
+                  
                 </div>
                 <div className="contact-content-right">
                   <div className="contact-form-container">
