@@ -3,9 +3,6 @@ $color-main-green: #5DB179;
 $color-grey: #BDBDBD;
 $color-orange: #FF6F59;
 
-
-
-
 // Resets
 body {
     margin: 0;
@@ -388,6 +385,7 @@ p {
         }   
     }
 
+
     // Contact
 .contact-container {
     color: #fff;
@@ -447,38 +445,6 @@ p {
                         bottom: 0;
                         left: 0;
                     }
-                    .form-group {
-                        display: flex;
-                        flex-direction: column;
-                        padding-bottom: 2rem;
-                        label {
-                            padding-bottom: 0.5rem;
-                            color: #fff;
-                            font-style: italic;
-                            font-size: 1rem;
-                        }
-                        input {
-                            background-color: #2d2d2d;
-                            border: none;
-                            padding: 0.5rem;
-                            color: #fff;
-                        }
-                        textarea {
-                            background-color: #2d2d2d;
-                            border: none;
-                            padding: 0.5rem;
-                            color: #fff;
-                            resize: vertical;
-                        }
-                    }
-                    .btn-primary {
-                        color: $color-main-green;
-                        text-transform: uppercase;
-                        &:hover {
-                            color: #fff;
-                        }
-                    }
-
                 }
             }
         }

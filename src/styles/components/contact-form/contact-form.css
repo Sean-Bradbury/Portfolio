@@ -1,0 +1,50 @@
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.form-group label {
+  padding-bottom: 0.5rem;
+  color: #fff;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.form-group input {
+  background-color: #2d2d2d;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.form-group textarea {
+  background-color: #2d2d2d;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  resize: vertical;
+}
+
+.form-group .error {
+  color: #5DB179;
+  font-style: italic;
+  padding-top: 15px;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  color: #5DB179;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=contact-form.css.map */

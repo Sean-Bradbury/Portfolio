@@ -1,0 +1,43 @@
+// Variables
+$color-main-green: #5DB179;
+$color-grey: #BDBDBD;
+$color-orange: #FF6F59;
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    label {
+        padding-bottom: 0.5rem;
+        color: #fff;
+        font-style: italic;
+        font-size: 1rem;
+    }
+    input {
+        background-color: #2d2d2d;
+        border: none;
+        padding: 0.5rem;
+        color: #fff;
+    }
+    textarea {
+        background-color: #2d2d2d;
+        border: none;
+        padding: 0.5rem;
+        color: #fff;
+        resize: vertical;
+    }
+    .error {
+        color: $color-main-green;
+        font-style: italic;
+        padding-top: 15px;
+        position: relative;
+        font-size: 0.9rem;
+    }
+}
+.btn-primary {
+    color: $color-main-green;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff;
+    }
+}

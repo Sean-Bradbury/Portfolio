@@ -1,28 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "../shared/Head";
 import Nav from "../components/nav";
-import ButtonPrimary from "../components/button-primary";
-import NextPageLink from "../components/Next-page-link";
-import TimelineSection from "../components/timeline-section";
-import TimeLineData from "../data/timeline-data";
-import Tabs from "../components/Tabs";
+import ContactForm from "../components/ContactForm";
 import Helmet from "react-helmet";
-import { Link } from "gatsby";
-import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
-export default function Home() {
-
-  function createTimelineItem(item) {
-    return (
-      <TimelineSection 
-        key= {item.id}
-        dateFrom= {item.dateFrom}
-        dateTo= {item.dateTo}
-        contentText= {item.contentText}
-      />
-    );
-  }
+export default function Contact() {
 
   return (
     <div className="contact-container">
@@ -44,26 +27,15 @@ export default function Home() {
                 </div>
                 <div className="contact-content-right">
                   <div className="contact-form-container">
-                    <form action="" method="post">
-                      <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name"/>
-                      </div>
-                      <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name="email"/>
-                      </div>
-                      <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                      </div>
-                      <button className="btn-primary" type="submit">Send Message</button>
-                    </form>
+
+                    <ContactForm />
+
                   </div>
                 </div>
               </div>
             </Fade> 
         </section>
+        <script src="../scripts/validation.js"></script>
     </div>
   )
   
