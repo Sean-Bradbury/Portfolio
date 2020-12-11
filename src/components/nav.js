@@ -5,10 +5,27 @@ import Styles from "../styles/components/nav/nav.css"
 
 export default function Nav(props){
 
+    function menuClick() {
+        const navLinks = document.querySelector(".nav-links-container");
+        
+        if (navLinks.style.display === "flex") {
+            navLinks.style.display = "none";
+        } else {
+            navLinks.style.display = "flex";
+        }
+
+        console.log("clicked");
+    }
+
     return(
         <Slide left delay={700}>
             <div>        
                 <nav id="nav">
+                    <div className="hamburger-container">
+                        <div onClick={menuClick} className="hamburger">                        
+                            <div className="hamburger-line"></div>
+                        </div>
+                    </div>
                     <div className="nav-links-container">
                         <Link className="nav-link" to="/"><img className="nav-link-image" src="../img/nav-icons/home.svg" alt=""/><div className="nav-link-text">Home</div></Link>
                         <Link className="nav-link" to="/about/"><img className="nav-link-image" src="../img/nav-icons/about.svg" alt=""/><div className="nav-link-text">About</div></Link>

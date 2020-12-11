@@ -21,14 +21,19 @@ $color-orange: #FF6F59;
             padding: 8px 16px;
             background-color: #303030;
             &:hover {
-                opacity: 0.8;
+                background-color: darken(#303030, 10%);
             }
         }        
         &-active {
             background-color: $color-main-green;
+            &:hover {
+                background-color: darken($color-main-green, 10%);
+            }
         }
     }
     .tab-content {
         padding: 2rem;
+        max-height: 430px;
+        overflow-y: auto;
     }
 }

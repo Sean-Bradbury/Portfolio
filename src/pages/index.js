@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
                 <div className="home-content-right">
                   <div className="headshot-container">
-                    <img className="headshot" src={"../../img/sean-bradbury-headshot.jpg"} alt="Sean Bradbury" srcset="../../img/sean-bradbury-headshot.jpg"/>
+                    <img className="headshot" src={"../../img/sean-bradbury-headshot.jpg"} alt="Sean Bradbury" srcSet="../../img/sean-bradbury-headshot.jpg"/>
                   </div>
                 </div>
               </div>

@@ -27,14 +27,20 @@
 }
 
 .tabs .tab-list-item:hover {
-  opacity: 0.8;
+  background-color: #171717;
 }
 
 .tabs .tab-list-active {
   background-color: #5DB179;
 }
 
+.tabs .tab-list-active:hover {
+  background-color: #479461;
+}
+
 .tabs .tab-content {
   padding: 2rem;
+  max-height: 430px;
+  overflow-y: auto;
 }
 /*# sourceMappingURL=tab.css.map */

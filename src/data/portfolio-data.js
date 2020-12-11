@@ -3,16 +3,16 @@ const PortfolioData = [
         "id": 1,
         "title": "Sean Bradbury - Portfolio",
         "tech": "Design, Gatsby",
-        "viewSiteLink": "https://www.google.com",
-        "viewSiteCode": "https://www.google.com",
+        "viewSiteLink": "https://www.seanbradbury.com",
+        "viewSiteCode": "https://github.com/Sean-Bradbury/Portfolio",
         "image": "../img/portfolio/portfolio-website.png"
     },
     {
         "id": 2,
         "title": "H20 Property Services",
         "tech": "Design, Logo, HTML, PHP, Bootstrap",
-        "viewSiteLink": "https://www.google.com",
-        "viewSiteCode": "https://www.google.com",
+        "viewSiteLink": "http://www.h2oplumbingandgas.co.uk/",
+        "viewSiteCode": "https://github.com/Sean-Bradbury/H2O-PlumbingAndGas",
         "image": "../img/portfolio/h2o-website.png"
     },
     {
@@ -27,7 +27,7 @@ const PortfolioData = [
         "id": 4,
         "title": "JW Trees",
         "tech": "Design, HTML, SCSS, JS, JQuery",
-        "viewSiteLink": "https://www.slumba.online",
+        "viewSiteLink": "https://www.jwtrees.co.uk/",
         "viewSiteCode": "https://www.google.com",
         "image": "../img/portfolio/jw-website.png"
     },

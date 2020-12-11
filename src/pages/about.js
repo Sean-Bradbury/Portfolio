@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="website">
+    <div>
       <Nav />
       <Head 
         title="Sean Bradbury | Full Stack Web Developer"
@@ -90,14 +90,16 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Fade delay={4000}>  
-                <NextPageLink 
-                  linkText="skills"
-                  linkLocation="/skills/"
-                />
-              </Fade>
-            </Fade> 
-        </section>
+              </Fade> 
+              </section>
+              <div className="about-next-page-link-container">              
+                <Fade delay={4000}>  
+                  <NextPageLink 
+                    linkText="skills"
+                    linkLocation="/skills/"
+                  />
+                </Fade>
+              </div>
     </div>
   )
   

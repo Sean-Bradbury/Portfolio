@@ -176,10 +176,28 @@ p {
 
 #about {
   height: 100%;
+  min-height: 100vh;
   width: 85%;
   margin-left: 15%;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/bg/arrow.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #about .about-content {
@@ -197,22 +215,10 @@ p {
   position: relative;
 }
 
-#about .about-content::after {
-  content: "";
-  position: absolute;
-  background-image: url("/img/bg/arrow.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
-
 #about .about-content-left {
-  margin-right: 1rem;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding-right: 5rem;
+  margin-right: 4rem;
 }
 
 #about .about-content-right {
@@ -220,16 +226,14 @@ p {
   position: relative;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-top: 10%;
+  z-index: 1;
+  height: 500px;
 }
 
 #about .about-content-right .experience-container {
   background-image: url("/img/bg/webb-dark.png");
   background-repeat: repeat;
-  margin-left: 1rem;
-  position: relative;
+  min-height: 500px;
 }
 
 #about .about-content-right .experience-container::after {
@@ -239,7 +243,7 @@ p {
   width: 100%;
   background-color: #FF6F59;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 #about .about-content-right .experience-container .timeline-container {
@@ -253,8 +257,7 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 400px;
-  overflow-y: auto;
+  min-height: 500px;
 }
 
 #about .about-content-right .experience-container .timeline-container .timeline-section {
@@ -319,6 +322,11 @@ p {
 #about .about-content-right .experience-container .timeline-content-text {
   padding-right: 1rem;
   color: #5DB179;
+}
+
+.about-next-page-link-container .next-page-link {
+  width: 85%;
+  right: 0;
 }
 
 #skills {
@@ -510,6 +518,57 @@ p {
   padding-right: 3rem;
 }
 
+.contact-container #contact .contact-content-left .profiles-container {
+  padding-top: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item-link {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item-link .profile-logo {
+  width: 35px;
+  padding-bottom: 1rem;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item-link .profile-text {
+  text-transform: uppercase;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item-link:hover .profile-text {
+  color: #5DB179;
+}
+
+.contact-container #contact .contact-content-left .profiles-container .profile-item:nth-child(2) {
+  padding-left: 2rem;
+}
+
 .contact-container #contact .contact-content-right {
   z-index: 1;
   position: relative;
@@ -543,5 +602,38 @@ p {
   background-color: #FF6F59;
   bottom: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #home {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  #home .home-content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .website {
+    height: 100%;
+  }
+  #home {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  #home .home-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 80px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
