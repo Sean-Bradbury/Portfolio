@@ -57,7 +57,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\The-Web-Development-Bootcamp.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noreferrer">Course Link</a></button>
                         </div>
                       </div>
                       <div className="personal-item">
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\Modern-HTML&CSS-From-The-Begining.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank" rel="noreferrer">Course Link</a></button>
                         </div>
                       </div>
                       <div className="personal-item">
@@ -75,7 +75,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\Web-Design-For-Web-Developers.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank" rel="noreferrer">Course Link</a></button>
                         </div>
                       </div>
                       
@@ -90,8 +90,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              </Fade> 
-              </section>
+              </Fade>               
               <div className="about-next-page-link-container">              
                 <Fade delay={4000}>  
                   <NextPageLink 
@@ -100,6 +99,8 @@ export default function Home() {
                   />
                 </Fade>
               </div>
+            </section>
+
     </div>
   )
   

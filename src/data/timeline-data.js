@@ -15,7 +15,7 @@ const TimeLineData = [
         "id": 3,
         "dateFrom": 2016,
         "dateTo": 2018,
-        "contentText": "Team Leader & Paid Marketer"
+        "contentText": "Team Leader"
     },
     {
         "id": 4,

@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 export default function Home() {
 
   return (
-    <div className="website">
+    <div>
       <Nav />
       <Head 
         title="Sean Bradbury | Full Stack Web Developer"
@@ -95,12 +95,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Fade delay={4000}>  
-                <NextPageLink 
-                  linkText="portfolio"
-                  linkLocation="/portfolio/"
-                />
-              </Fade>
+              <div className="skills-next-page-link-container"> 
+                <Fade delay={4000}>  
+                  <NextPageLink 
+                    linkText="portfolio"
+                    linkLocation="/portfolio/"
+                  />
+                </Fade>
+              </div>
             </Fade> 
         </section>
     </div>

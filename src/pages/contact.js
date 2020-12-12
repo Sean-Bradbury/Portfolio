@@ -24,8 +24,8 @@ export default function Contact() {
                     If you’re looking for a passionate web developer to work with you on your project, please get in touch. I’d love to hear from you.
                   </p>
                   <div className="profiles-container">
-                    <div className="profile-item"><a className="profile-item-link" href="https://github.com/Sean-Bradbury" target="_blank"><img src="/img/contact/github.png" alt="GitHub" className="profile-logo"/> <div className="profile-text">Github</div></a></div>
-                    <div className="profile-item"><a className="profile-item-link" href="https://www.frontendmentor.io/profile/Sean-Bradbury" target="_blank"><img src="/img/contact/fem.png" alt="Front End Mentor" className="profile-logo"/> <div className="profile-text">Front End Mentor</div></a></div>
+                    <div className="profile-item"><a className="profile-item-link" href="https://github.com/Sean-Bradbury" target="_blank" rel="noreferrer"><img src="/img/contact/github.png" alt="GitHub" className="profile-logo"/> <div className="profile-text">Github</div></a></div>
+                    <div className="profile-item"><a className="profile-item-link" href="https://www.frontendmentor.io/profile/Sean-Bradbury" target="_blank" rel="noreferrer"><img src="/img/contact/fem.png" alt="Front End Mentor" className="profile-logo"/> <div className="profile-text">Front End Mentor</div></a></div>
                   </div>
                 </div>
                 <div className="contact-content-right">

@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Home() {
   return (
-    <div className="website">
+    <div>
       <Nav />
       <Head 
         title="Sean Bradbury | Full Stack Web Developer"
@@ -29,6 +29,9 @@ export default function Home() {
                     from Nottingham
                     <br></br>
                   </h1>
+                  <div className="headshot-container">
+                    <img className="headshot" src={"../../img/sean-bradbury-headshot.jpg"} alt="Sean Bradbury" srcSet="../../img/sean-bradbury-headshot.jpg"/>
+                  </div>
                   <p className="subtitle">Full Stack Developer / Paid Marketer</p>
                   <ButtonPrimary 
                     text="GET IN TOUCH"
