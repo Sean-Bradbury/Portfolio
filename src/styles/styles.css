@@ -268,9 +268,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 1rem;
 }
 
@@ -321,6 +321,8 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+  left: 70px;
 }
 
 #about .about-content-right .experience-container .timeline-content-text {
@@ -826,7 +828,6 @@ p {
   #about .about-content-right {
     margin: 0;
     padding-top: 50px;
-    width: 100%;
     height: 100%;
   }
   #about .about-content-right .experience-container {
@@ -862,8 +863,9 @@ p {
   .contact-container #contact .contact-content {
     padding-bottom: 80px;
   }
-  .contact-container #contact .contact-content-left {
-    padding: 10%;
+  .contact-container #contact .contact-content-right {
+    padding: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

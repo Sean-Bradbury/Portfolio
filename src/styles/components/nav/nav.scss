@@ -82,16 +82,18 @@ $color-grey: #BDBDBD;
             box-shadow: none;
         }
         .nav-links-container {
-            display: none;
             justify-content: flex-start;
             align-content: center;
-            padding: 1rem 0;
+            margin: 0;
+            padding: 0;
             background-image: url("/img/bg/double-bubble-dark.png");
             background-repeat: repeat;
             width: 100%;
             height: auto;
             position: absolute;
+            transform: translateY(-100%);
             top: 0;
+            transition: all 0.7s ease-in-out;
 
             &::before {
                 content: "";
@@ -116,6 +118,12 @@ $color-grey: #BDBDBD;
                 }
             }
         }
+        .nav-links-container.active {
+            opacity: 1;
+            display: flex;
+            transform: translateY(0);
+        }
+        
         .hamburger-container {
             display: flex;
             justify-content: flex-end;
@@ -144,6 +152,8 @@ $color-grey: #BDBDBD;
                         height: 2px;
                         width: 30px;
                         background-color: $color-main-green;
+                        transform: rotate(0);
+                        transition: transform 1s ease-in;
                     }
                     &::after {
                         content: "";
@@ -152,9 +162,25 @@ $color-grey: #BDBDBD;
                         height: 2px;
                         width: 30px;
                         background-color: $color-main-green;
+                        transform: rotate(0);
+                        transition: transform 1s ease-in;
                     }
                 }
             }
+        }
+
+        .hamburger-container.active .hamburger-line{
+            background-color: #222222;
+        }
+
+        .hamburger-container.active .hamburger-line::before{
+            top: 0px;
+            transform: rotate(45deg);
+        }
+
+        .hamburger-container.active .hamburger-line::after{
+            top: 0px;
+            transform: rotate(-45deg);
         }
     }
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import Styles from "../styles/components/contact-form/contact-form.css"
+import "../styles/components/contact-form/contact-form.css"
 
 export default () => (
   <Formik

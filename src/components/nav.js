@@ -1,20 +1,16 @@
 import React from "react";
 import Slide from "react-reveal/Slide";
 import { Link } from "gatsby";
-import Styles from "../styles/components/nav/nav.css"
+import "../styles/components/nav/nav.css"
 
 export default function Nav(props){
 
     function menuClick() {
         const navLinks = document.querySelector(".nav-links-container");
+        const hamburger = document.querySelector(".hamburger-container");
         
-        if (navLinks.style.display === "flex") {
-            navLinks.style.display = "none";
-        } else {
-            navLinks.style.display = "flex";
-        }
-
-        console.log("clicked");
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
     }
 
     return(
