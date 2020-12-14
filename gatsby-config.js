@@ -8,21 +8,6 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-react-helmet`,
-    },
-     {
-       resolve: `gatsby-plugin-prefetch-google-fonts`,
-       options: {
-         fonts: [
-           {
-             family: `Archivo`,
-             variants: [`400`, `700`]
-           },
-           {
-             family: `Roboto`,
-             subsets: [`latin`]
-           },
-         ],
-       },
-     }
+    }
    ]
  }

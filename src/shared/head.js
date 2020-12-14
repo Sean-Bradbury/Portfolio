@@ -5,6 +5,8 @@ export default function Head(props){
     return (
         <div>
             <Helmet>
+                <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+                
                 <title>{props.title}</title>
                 <meta name="description" content={props.metaDesc} />
 
