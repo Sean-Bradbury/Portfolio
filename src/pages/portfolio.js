@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "../shared/Head";
+import Head from "../shared/HeadShared";
 import Nav from "../components/NavComponent";
 import NextPageLink from "../components/NextPageLink";
 import Portfolio from "../components/PortfolioItem";
