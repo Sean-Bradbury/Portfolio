@@ -13,6 +13,10 @@
   transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
+#nav .toggle {
+  display: none;
+}
+
 #nav .hamburger-container {
   display: none;
 }
@@ -108,6 +112,7 @@
             box-shadow: none;
   }
   #nav .nav-links-container {
+    visibility: hidden;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -120,9 +125,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    top: 0;
+    top: -100%;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
   }
@@ -150,13 +153,35 @@
   #nav .nav-links-container .nav-link .nav-link-image {
     opacity: 1;
   }
-  #nav .nav-links-container.active {
+  #nav .toggle:checked ~ .nav-links-container {
     opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    display: block;
+    visibility: visible;
+    top: 0;
+  }
+  #nav .toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    height: 40px;
+    width: 40px;
+    margin: 1rem;
+    opacity: 0;
+  }
+  #nav .toggle:checked + .hamburger-container > div > div {
+    background-color: #222222;
+  }
+  #nav .toggle:checked + .hamburger-container > div > div::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #nav .toggle:checked + .hamburger-container > div > div::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   #nav .hamburger-container {
     display: -webkit-box;
@@ -218,19 +243,6 @@
     transition: -webkit-transform 1s ease-in;
     transition: transform 1s ease-in;
     transition: transform 1s ease-in, -webkit-transform 1s ease-in;
-  }
-  #nav .hamburger-container.active .hamburger-line {
-    background-color: #222222;
-  }
-  #nav .hamburger-container.active .hamburger-line::before {
-    top: 0px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #nav .hamburger-container.active .hamburger-line::after {
-    top: 0px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
   }
 }
 /*# sourceMappingURL=nav.css.map */

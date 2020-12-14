@@ -12,6 +12,9 @@ $color-grey: #BDBDBD;
     z-index: 5;
     box-shadow: 0px 0px 20px $color-main-green;
     transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    .toggle {
+        display: none;
+    }
     .hamburger-container {
         display: none;
     }
@@ -82,6 +85,7 @@ $color-grey: #BDBDBD;
             box-shadow: none;
         }
         .nav-links-container {
+            visibility: hidden;
             justify-content: flex-start;
             align-content: center;
             margin: 0;
@@ -91,8 +95,7 @@ $color-grey: #BDBDBD;
             width: 100%;
             height: auto;
             position: absolute;
-            transform: translateY(-100%);
-            top: 0;
+            top: -100%;
             transition: all 0.7s ease-in-out;
 
             &::before {
@@ -117,11 +120,38 @@ $color-grey: #BDBDBD;
                     opacity: 1;
                 }
             }
-        }
-        .nav-links-container.active {
+        }        
+
+        .toggle:checked ~ .nav-links-container {
             opacity: 1;
-            display: flex;
-            transform: translateY(0);
+            display: block;
+            visibility: visible;
+            top: 0;
+        }
+
+        .toggle {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 50;
+            height: 40px;
+            width: 40px;
+            margin: 1rem;
+            opacity: 0;
+        }
+
+        .toggle:checked + .hamburger-container > div > div {
+            background-color: #222222;
+        }
+
+        .toggle:checked + .hamburger-container > div > div::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        .toggle:checked + .hamburger-container > div > div::after {
+            top: 0;
+            transform: rotate(-45deg);
         }
         
         .hamburger-container {
@@ -167,20 +197,6 @@ $color-grey: #BDBDBD;
                     }
                 }
             }
-        }
-
-        .hamburger-container.active .hamburger-line{
-            background-color: #222222;
-        }
-
-        .hamburger-container.active .hamburger-line::before{
-            top: 0px;
-            transform: rotate(45deg);
-        }
-
-        .hamburger-container.active .hamburger-line::after{
-            top: 0px;
-            transform: rotate(-45deg);
         }
     }
 }
