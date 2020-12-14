@@ -625,8 +625,9 @@ p {
 @media only screen and (max-width: 1024px) {
   #home {
     width: 100%;
+    height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   #home .home-content {
     -ms-flex-pack: distribute;
@@ -767,7 +768,6 @@ p {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: hidden;
   }
   #home .home-content {
     -webkit-box-orient: vertical;
