@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../styles/styles.css"
+import "../styles/styles.css"
 
 export default function TimelineSection(props) {
     return (
