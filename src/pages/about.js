@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/Nav";
+import Nav from "../components/NavComponent";
 import NextPageLink from "../components/NextPageLink";
 import TimelineSection from "../components/TimelineSection";
 import TimeLineData from "../data/timeline-data";
-import Tabs from "../components/Tabs";
+import Tabs from "../components/TabsComponent";
 import Fade from "react-reveal/Fade";
 
 export default function Home() {

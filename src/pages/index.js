@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/Nav";
+import Nav from "../components/NavComponent";
 import ButtonPrimary from "../components/ButtonPrimary";
 import NextPageLink from "../components/NextPageLink";
 import Slide from "react-reveal/Slide";

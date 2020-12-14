@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "../shared/Head";
-import Nav from "../components/Nav";
+import Nav from "../components/NavComponent";
 import NextPageLink from "../components/NextPageLink";
 import Portfolio from "../components/PortfolioItem";
 import Fade from "react-reveal/Fade";
