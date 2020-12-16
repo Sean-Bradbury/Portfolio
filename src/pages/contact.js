@@ -3,6 +3,7 @@ import Head from "../shared/HeadShared";
 import Nav from "../components/NavComponent";
 import ContactForm from "../components/ContactForm";
 import Fade from "react-reveal/Fade";
+import { Formik, Form, Field, ErrorMessage } from 'formik'
 import "../styles/components/contact-form/contact-form.css"
 
 const encode = (data) => {
