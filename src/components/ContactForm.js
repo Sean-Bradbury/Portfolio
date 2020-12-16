@@ -11,7 +11,7 @@ import "../styles/components/contact-form/contact-form.css"
 
 export default () => ( 
   
-    <form name="portfolio-form" method="POST" data-netlify="true">
+    <form name="portfolio-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <div className="form-group">
             <label htmlFor="name">Name: </label>
             <input type="text" name="name"/>
@@ -26,8 +26,6 @@ export default () => (
             <label htmlFor="message">Message:  </label>
             <textarea name="message" rows="4"></textarea>
         </div>
-
-        <input type="hidden" name="portfolio-form" value="contact"></input>
 
       <button className="btn-primary" type="submit">Send Message</button>
     </form>
