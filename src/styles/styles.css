@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+.copy-link {
+  color: #5DB179;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -764,6 +768,19 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .btn-primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    background: none;
+  }
+  .btn-primary:hover {
+    color: #5DB179;
+  }
   #home {
     width: 100%;
     height: 100%;
@@ -798,6 +815,10 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    background: none;
+  }
+  #home .home-content-left .btn-primary:hover {
+    color: #5DB179;
   }
   #home .home-content-right .headshot-container {
     display: none;

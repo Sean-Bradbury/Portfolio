@@ -16,7 +16,7 @@ $color-orange: #FF6F59;
     input {
         background-color: #2d2d2d;
         border: none;
-        padding: 0.5rem;
+        padding: 0.75rem;
         color: #fff;
     }
     textarea {
@@ -41,3 +41,22 @@ $color-orange: #FF6F59;
         color: #fff;
     }
 }
+
+@media (max-width: 767px) {
+    .form-group {
+        .error {
+            font-size: 1rem;
+        }
+    }
+    .btn-primary {
+        color: $color-main-green;
+        text-transform: uppercase;
+        transition: none;
+        padding: 1.2rem 1.5rem;
+        font-size: 1.1rem;
+        &:hover {
+            background: none;
+        }
+    }
+}
+

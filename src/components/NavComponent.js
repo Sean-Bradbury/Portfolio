@@ -1,5 +1,4 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
 import { Link } from "gatsby";
 import "../styles/components/nav/nav.css"
 

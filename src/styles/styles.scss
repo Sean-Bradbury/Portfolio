@@ -31,6 +31,10 @@ a {
     text-decoration: none;
 }
 
+.copy-link {
+    color: $color-main-green;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -636,6 +640,16 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+    // Buttons
+    .btn-primary {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: none;
+        &:hover {
+            color: $color-main-green;
+        }
+    }
     // Home
     #home {
         width: 100%;
@@ -661,6 +675,10 @@ p {
                     display: flex;
                     justify-content: center;
                     width: 100%;
+                    background: none;
+                    &:hover {
+                        color: $color-main-green;
+                    }
                 }
             }
             &-right {

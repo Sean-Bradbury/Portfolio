@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../styles/components/portfolio/portfolio.css";
+import "../styles/components/portfolio/portfolio.css";
 
 export default function Portfolio(props) {
     return (

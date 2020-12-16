@@ -3,6 +3,7 @@ import Head from "../shared/HeadShared";
 import Nav from "../components/NavComponent";
 import NextPageLink from "../components/NextPageLink";
 import Fade from "react-reveal/Fade";
+import { Link } from "gatsby";
 
 export default function Home() {
 
@@ -21,13 +22,13 @@ export default function Home() {
                     Skills
                   </h1>
                   <p>
-                    Hi my name’s Sean Bradbury, I originally started my career in the web industry 10 years ago. Working a large portion of this as a paid marketer. 
+                    I’m the kind of person that genuinely has a growth mindset and loves to learn new things. The programs and technologies on the right are just some that I am familiar with.   
                     <br />
                     <br />
-                    I noticed through creating high converting landing pages and wordpress websites for friends & family  that I had a passion for design. A yearning for a more creative work began and I started my web development journey.
+                    I intend to keep expanding my knowledge, keeping up to date with the web industry, and increasing my skill set to provide the right solutions for the clients that I work with.
                     <br />
                     <br />
-                    My analytical/logical side loves to code and my artistic side loves to create. I revel in the challenges of problem solving and I’m excited by the continual growth availble through this profession.
+                    If you’re interested in working with me and would like to talk, feel free to <Link className="copy-link" to="/contact/">get in touch</Link>. 
                     <br />
                     <br />
                   </p>

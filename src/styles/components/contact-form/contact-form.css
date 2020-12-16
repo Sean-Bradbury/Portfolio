@@ -19,7 +19,7 @@
 .form-group input {
   background-color: #2d2d2d;
   border: none;
-  padding: 0.5rem;
+  padding: 0.75rem;
   color: #fff;
 }
 
@@ -46,5 +46,22 @@
 
 .btn-primary:hover {
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .form-group .error {
+    font-size: 1rem;
+  }
+  .btn-primary {
+    color: #5DB179;
+    text-transform: uppercase;
+    -webkit-transition: none;
+    transition: none;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  .btn-primary:hover {
+    background: none;
+  }
 }
 /*# sourceMappingURL=contact-form.css.map */

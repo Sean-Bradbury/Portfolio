@@ -35,13 +35,13 @@ export default function Home() {
                     About
                   </h1>
                   <p>
-                    Hi my name’s Sean Bradbury, I originally started my career in the web industry 10 years ago. Working a large portion of this as a paid marketer. 
+                    Hi, my name’s Sean Bradbury. I have been working at web agencies for the last ten years, working for real businesses to improve their web presence and business gained through online means.
                     <br />
                     <br />
-                    I noticed through creating high converting landing pages and wordpress websites for friends & family  that I had a passion for design. A yearning for a more creative work began and I started my web development journey.
+                    I have worked closely with professionals through many disciplines and have picked up a lot of knowledge along the way. I had dabbled with web development throughout this time, and in the last two years, I fell in love with the constant growth available through learning web development on a much deeper level.
                     <br />
                     <br />
-                    My analytical/logical side loves to code and my artistic side loves to create. I revel in the challenges of problem solving and I’m excited by the continual growth availble through this profession.
+                    I have an analytical/logical side that loves getting deep into code and an artistic side loves to create. I revel in the challenges of problem-solving and get excited by learning new technologies and frameworks. 
                     <br />
                     <br />
                   </p>
@@ -57,7 +57,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\The-Web-Development-Bootcamp.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noreferrer">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noreferrer" download="The-Web-Development-Bootcamp.pdf">Course Link</a></button>
                         </div>
                       </div>
                       <div className="personal-item">
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\Modern-HTML&CSS-From-The-Begining.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank" rel="noreferrer">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank" rel="noreferrer" download="Modern-HTML&CSS-From-The-Begining.pdf">Course Link</a></button>
                         </div>
                       </div>
                       <div className="personal-item">
@@ -75,7 +75,7 @@ export default function Home() {
                         </div>
                         <div className="personal-item-links">
                           <button className="btn-primary"><a href="\pdf\Web-Design-For-Web-Developers.pdf">Certificate</a></button>
-                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank" rel="noreferrer">Course Link</a></button>
+                          <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank" rel="noreferrer" download="Web-Design-For-Web-Developers.pdf">Course Link</a></button>
                         </div>
                       </div>
                       
