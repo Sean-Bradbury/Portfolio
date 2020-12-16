@@ -2,6 +2,12 @@ import React from "react"
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import "../styles/components/contact-form/contact-form.css"
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default () => (
   
   <Formik
