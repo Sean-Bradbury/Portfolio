@@ -24,7 +24,7 @@ export default function Home() {
                     <br></br>
                     I'm Sean,
                     <br></br>
-                    Web Deveoper,
+                    Web Developer,
                     <br></br>
                     from Nottingham
                     <br></br>
