@@ -27,7 +27,7 @@ export default () => (
             <textarea name="message" rows="4"></textarea>
         </div>
 
-      <button className="btn-primary" type="submit">Send Message</button>
+      <button className="btn-primary">Send Message</button>
     </form>
   )
 
