@@ -4,6 +4,12 @@ import Nav from "../components/NavComponent";
 import ContactForm from "../components/ContactForm";
 import Fade from "react-reveal/Fade";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function Contact() {
 
   return (
