@@ -11,7 +11,7 @@ import "../styles/components/contact-form/contact-form.css"
 
 export default () => ( 
   
-    <form id="form" className="form" name="portfolio-form" method="POST" data-netlify={true}>
+    <form name="portfolio-form" method="POST" data-netlify="true">
         <div className="form-group">
             <label htmlFor="name">Name: </label>
             <input type="text" name="name"/>
