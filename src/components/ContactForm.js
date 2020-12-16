@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 // import { Formik, Form, Field, ErrorMessage } from 'formik'
 import "../styles/components/contact-form/contact-form.css"
 
@@ -9,27 +9,83 @@ import "../styles/components/contact-form/contact-form.css"
 // }
 
 
-export default () => ( 
-  
-    <form name="portfolio-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <div className="form-group">
-            <label htmlFor="name">Name: </label>
-            <input type="text" name="name"/>
-        </div>
+export default () => {
 
-        <div className="form-group">
-            <label htmlFor="email">Email: </label>
-            <input type="email" name="email"/>
-        </div>
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
-        <div className="form-group">
-            <label htmlFor="message">Message:  </label>
-            <textarea name="message" rows="4"></textarea>
-        </div>
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-      <button className="btn-primary">Send Message</button>
-    </form>
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  }
+
+  return (
+    <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    <div className="form-group">
+        <label htmlFor="name">Name: </label>
+        <input id="name" type="text" onChange={handleChange} value={formState.name} name="name"/>
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="email">Email: </label>
+        <input id="email" type="email" onChange={handleChange} value={formState.email} name="email"/>
+
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="message">Message:  </label>
+        <textarea id="message" onChange={handleChange} value={formState.message} name="message" rows="4"></textarea>
+    </div>
+
+  <button className="btn-primary" type="submit">Send Message</button>
+</form>
   )
+}
+  
+
+
+//   <form name="portfolio-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+//   <div className="form-group">
+//       <label htmlFor="name">Name: </label>
+//       <input type="text" name="name"/>
+//   </div>
+
+//   <div className="form-group">
+//       <label htmlFor="email">Email: </label>
+//       <input type="email" name="email"/>
+//   </div>
+
+//   <div className="form-group">
+//       <label htmlFor="message">Message:  </label>
+//       <textarea name="message" rows="4"></textarea>
+//   </div>
+
+// <button className="btn-primary" type="submit">Send Message</button>
+// </form>
 
   // <Formik
   //   initialValues={{
