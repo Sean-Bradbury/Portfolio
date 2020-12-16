@@ -36,7 +36,7 @@ export default () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Thank you for your message - I'll get back to you as soon as possible!"))
       .catch(error => alert(error));
 
     e.preventDefault();

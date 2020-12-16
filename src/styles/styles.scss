@@ -640,16 +640,6 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-    // Buttons
-    .btn-primary {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        background: none;
-        &:hover {
-            color: $color-main-green;
-        }
-    }
     // Home
     #home {
         width: 100%;
@@ -712,6 +702,19 @@ p {
                 height: 100%;
                 .experience-container {
                     height: 100%;
+                    .personal-item-links {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .btn-primary {
+                            display: flex;
+                            justify-content: center;
+                            width: 50%;
+                            padding: 0.75rem;
+                            font-size: 1rem;
+                        }
+
+                    }
                     .timeline-container {
                         height: 100%;
                     }

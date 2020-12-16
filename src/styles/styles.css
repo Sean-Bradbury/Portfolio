@@ -768,19 +768,6 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-  .btn-primary {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    background: none;
-  }
-  .btn-primary:hover {
-    color: #5DB179;
-  }
   #home {
     width: 100%;
     height: 100%;
@@ -853,6 +840,26 @@ p {
   }
   #about .about-content-right .experience-container {
     height: 100%;
+  }
+  #about .about-content-right .experience-container .personal-item-links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #about .about-content-right .experience-container .personal-item-links .btn-primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    padding: 0.75rem;
+    font-size: 1rem;
   }
   #about .about-content-right .experience-container .timeline-container {
     height: 100%;
