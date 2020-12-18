@@ -96,6 +96,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              </Fade> 
               <div className="skills-next-page-link-container"> 
                 <Fade delay={4000}>  
                   <NextPageLink 
@@ -104,7 +105,6 @@ export default function Home() {
                   />
                 </Fade>
               </div>
-            </Fade> 
         </section>
     </div>
   )

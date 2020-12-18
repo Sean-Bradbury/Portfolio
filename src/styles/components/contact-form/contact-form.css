@@ -23,6 +23,14 @@
   color: #fff;
 }
 
+.form-group input:valid {
+  border: 1px solid #5DB179;
+}
+
+.form-group input:focus:invalid {
+  border: 1px solid red;
+}
+
 .form-group textarea {
   background-color: #2d2d2d;
   border: none;

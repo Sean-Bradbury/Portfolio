@@ -876,10 +876,6 @@ p {
   #skills .skills-content-left::after {
     display: none;
   }
-  #skills .skills-next-page-link-container .next-page-link {
-    width: 100%;
-    bottom: 2%;
-  }
   #portfolio .portfolio-content {
     padding: 50px 5%;
   }

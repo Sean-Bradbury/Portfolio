@@ -2,7 +2,7 @@ const PortfolioData = [
     {
         "id": 1,
         "title": "Sean Bradbury - Portfolio",
-        "tech": "Design, Gatsby",
+        "tech": "Design, Gatsby, Javascript",
         "viewSiteLink": "https://www.seanbradbury.com",
         "viewSiteCode": "https://github.com/Sean-Bradbury/Portfolio",
         "image": "../img/portfolio/portfolio-website.png"
@@ -11,7 +11,7 @@ const PortfolioData = [
         "id": 2,
         "title": "H20 Property Services",
         "tech": "Design, Logo, HTML, PHP, Bootstrap",
-        "viewSiteLink": "http://www.h2oplumbingandgas.co.uk/",
+        "viewSiteLink": "https://sheltered-fortress-18792.herokuapp.com/",
         "viewSiteCode": "https://github.com/Sean-Bradbury/H2O-PlumbingAndGas",
         "image": "../img/portfolio/h2o-website.png"
     },
