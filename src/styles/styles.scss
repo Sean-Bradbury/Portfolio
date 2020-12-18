@@ -423,7 +423,9 @@ p {
     width: 100%;
 
     #contact {
-        height: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
         width: 85%;
         margin-left: 15%;
         position: relative;
@@ -531,7 +533,7 @@ p {
         overflow: hidden;
         padding-top: 80px;
         padding-bottom: 80px;
-        align-items: flex-start;
+        align-items: center;
         .about-content {
             height: 100%;
             flex-direction: column;
@@ -555,8 +557,7 @@ p {
         height: 100%;
         margin: 0;
         overflow: hidden;
-        padding-top: 80px;
-        align-items: flex-start;
+        align-items: center;
         .skills-content {
             height: 100%;
             flex-direction: column;
@@ -611,10 +612,14 @@ p {
     .contact-container {
         display: flex;
         justify-content: center;
+        align-items: center;
+        min-height: 100vh;
         width: 100%;
+        overflow: auto;
         #contact {
             width: 100%;
             margin: 0;
+            overflow: visible;
             .contact-content {
                 padding: 0;
                 flex-direction: column;
@@ -727,6 +732,7 @@ p {
     #skills {
         .skills-content {
             padding-bottom: 100px;
+            padding-top: 80px;
             &-left {
                 padding: 10%;
                 &::before {

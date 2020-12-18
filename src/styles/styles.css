@@ -498,7 +498,13 @@ p {
 }
 
 .contact-container #contact {
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
   width: 85%;
   margin-left: 15%;
   position: relative;
@@ -644,9 +650,9 @@ p {
     overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #about .about-content {
     height: 100%;
@@ -673,10 +679,9 @@ p {
     height: 100%;
     margin: 0;
     overflow: hidden;
-    padding-top: 80px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #skills .skills-content {
     height: 100%;
@@ -737,11 +742,17 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
     width: 100%;
+    overflow: auto;
   }
   .contact-container #contact {
     width: 100%;
     margin: 0;
+    overflow: visible;
   }
   .contact-container #contact .contact-content {
     padding: 0;
@@ -866,6 +877,7 @@ p {
   }
   #skills .skills-content {
     padding-bottom: 100px;
+    padding-top: 80px;
   }
   #skills .skills-content-left {
     padding: 10%;
