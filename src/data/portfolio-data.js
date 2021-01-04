@@ -9,12 +9,12 @@ const PortfolioData = [
     },
     {
         "id": 2,
-        "title": "H20 Property Services",
-        "tech": "Design, Logo, HTML, PHP, Bootstrap",
-        "viewSiteLink": "https://sheltered-fortress-18792.herokuapp.com/",
-        "viewSiteCode": "https://github.com/Sean-Bradbury/H2O-PlumbingAndGas",
-        "image": "../img/portfolio/h2o-website.png"
-    },
+        "title": "Rest Countries API",
+        "tech": "React, Javascript, API, CSS, HTML",
+        "viewSiteLink": "https://stupefied-ride-ab7e18.netlify.app/",
+        "viewSiteCode": "https://github.com/Sean-Bradbury/rest-countries-api",
+        "image": "../img/portfolio/rest-countries-api.png"
+    },    
     {
         "id": 3,
         "title": "Slumba",
@@ -33,6 +33,14 @@ const PortfolioData = [
     },
     {
         "id": 5,
+        "title": "H20 Property Services",
+        "tech": "Design, Logo, HTML, PHP, Bootstrap",
+        "viewSiteLink": "https://sheltered-fortress-18792.herokuapp.com/",
+        "viewSiteCode": "https://github.com/Sean-Bradbury/H2O-PlumbingAndGas",
+        "image": "../img/portfolio/h2o-website.png"
+    },
+    {
+        "id": 6,
         "title": "Learn To Code",
         "tech": "HTML, SCSS, Form Validation",
         "viewSiteLink": "https://amazing-swirles-1b3f9f.netlify.app/",
@@ -40,7 +48,7 @@ const PortfolioData = [
         "image": "../img/portfolio/learntocode-landingpage.png"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Bookmark",
         "tech": "HTML, SCSS, JS, JQuery, Form Validation",
         "viewSiteLink": "https://peaceful-lamport-ff3a3e.netlify.app/",

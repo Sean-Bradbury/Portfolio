@@ -35,13 +35,13 @@ export default function Home() {
                     About
                   </h1>
                   <p>
-                    Hi, I’m Sean Bradbury. For the past 10 years I have worked at several web agencies as a search engine optimiser, senior paid marketer and a team leader. During this time I have helped many companies to improve their web presence and business generated online. 
+                    Hi, I’m Sean Bradbury. For the past 10 years I have worked at several web agencies as a search engine optimiser, senior paid marketer and a team leader. 
                     <br />
                     <br />
-                    I have worked collaboratively with professionals from various disciplines and have picked up lots of knowledge and experience in along the way.
+                    I have worked collaboratively with professionals from various disciplines and have picked up lots of knowledge along the way.
                     <br />
                     <br />
-                    I had dabbled with web development throughout this time, and in the last two years, I fell in love with the constant growth available through learning web development on a much deeper level.
+                    I decided I wanted to switch careers and In the last two years I've been working hard to get better with web development. I absolutely love the constant growth I'm able to achieve through learning web development.
                     <br />
                     <br />
                     My analytical/logical side enjoys immersing in code, whereas my artistic side loves to get creative. I  revel in the challenges of problem-solving and get excited by learning new technologies and frameworks.

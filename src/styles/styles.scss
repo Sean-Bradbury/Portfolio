@@ -170,7 +170,7 @@ p {
                 transform: scale(0.9);
                 overflow: hidden;
                 .headshot {
-                    transform: scale(1.1);
+                    max-height: 400px;
                 }
             }
         }
@@ -663,7 +663,7 @@ p {
                     transform: scale(0.9);
                     overflow: hidden;
                     .headshot {
-                        transform: scale(1.1);
+                        width: 80vw;
                     }
                 }
                 .btn-primary {

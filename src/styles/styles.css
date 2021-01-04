@@ -178,8 +178,7 @@ p {
 }
 
 #home .home-content-right .headshot-container .headshot {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  max-height: 400px;
 }
 
 #about {
@@ -802,8 +801,7 @@ p {
     overflow: hidden;
   }
   #home .home-content-left .headshot-container .headshot {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    width: 80vw;
   }
   #home .home-content-left .btn-primary {
     display: -webkit-box;

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "../styles/components/contact-form/contact-form.css"
-import { Formik } from "formik";
 
 export default () => {
 

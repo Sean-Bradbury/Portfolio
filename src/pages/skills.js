@@ -22,7 +22,7 @@ export default function Home() {
                     Skills
                   </h1>
                   <p>
-                    I’m the kind of person that genuinely has a growth mindset and loves to learn new things. The programs and technologies on the right are just some that I am familiar with.   
+                    I have a growth mindset and love to learn new things. The programs and technologies on the right are just some that I am familiar with.   
                     <br />
                     <br />
                     I intend to keep expanding my knowledge, keeping up to date with the web industry, and increasing my skill set to provide the right solutions for the clients that I work with.
