@@ -44,12 +44,23 @@ $color-orange: #FF6F59;
             }
             .nav-link-image {
                 transition: opacity 1s ease-in-out 1s;
-                opacity: 0.5;
+                opacity: 0.3;
             }
             &:hover {
                 .nav-link-text {
                     color: $color-main-green;
                 }
+            }
+        }
+        [aria-current]  {
+            .nav-link-text {
+                font-weight: bold;
+                color: $color-main-green;
+            }
+            .nav-link-image {
+                position: relative;
+                opacity: 1;
+                transform: scale(1.1);
             }
         }
     }
@@ -80,6 +91,7 @@ $color-orange: #FF6F59;
         box-shadow: none;
         .nav-links-container {
             display: none;
+            
         }
         &:hover {
             width: 100%;
@@ -206,6 +218,15 @@ $color-orange: #FF6F59;
                         opacity: 0;
                         transition: opacity 0.3s ease-in-out 0.5s;
                     }
+                }
+            }
+            [aria-current]  {
+                .nav-link-text {
+                    font-weight: bold;
+                    color: $color-main-green;
+                }
+                .nav-link-image {
+                    opacity: 1;
                 }
             }
             .nav-links-mobile.open {
