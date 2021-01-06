@@ -3,13 +3,7 @@ import Head from "../shared/HeadShared";
 import Nav from "../components/NavComponent";
 import ContactForm from "../components/ContactForm";
 import Fade from "react-reveal/Fade";
-import "../styles/components/contact-form/contact-form.css"
-
-const encode = (data) => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+import "../styles/components/contact-form/contact-form.css";
 
 export default function Contact() {
 

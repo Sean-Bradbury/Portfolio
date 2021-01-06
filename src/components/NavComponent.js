@@ -30,9 +30,9 @@ export default function Nav(props){
                     {/* Mobile Menu */}
 
                     <div className="mobile-menu">                
-                        <div onClick={openMenu} className="hamburger">
+                        <button onClick={openMenu} className="hamburger">
                             <div className="hamburger-line"></div>
-                        </div>
+                        </button>
 
                         <div className="nav-links-mobile">
                             <Link className="nav-link" to="/"><img className="nav-link-image" src="../img/nav-icons/home.svg" alt=""/><div className="nav-link-text">Home</div></Link>

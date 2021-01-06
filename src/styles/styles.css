@@ -631,6 +631,26 @@ p {
   left: 0;
 }
 
+.error-container {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.error-container #error-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 85%;
+  margin-left: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1024px) {
   #home {
     width: 100%;
