@@ -59,7 +59,7 @@ export default function Home() {
                           <p>The Complete 2020 Web Development Bootcamp - Course (55hrs)</p>
                         </div>
                         <div className="personal-item-links">
-                          <button className="btn-primary"><a href="\pdf\The-Web-Development-Bootcamp.pdf">Certificate</a></button>
+                          <button className="btn-primary"><a href="https://drive.google.com/file/d/1Ff1Sp0H6TZzvoEIHhb2s8QueovWYP2Gg/view">Certificate</a></button>
                           <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noreferrer" download="The-Web-Development-Bootcamp.pdf">Course Link</a></button>
                         </div>
                       </div>
@@ -68,7 +68,7 @@ export default function Home() {
                           <p>Modern HTML & CSS From The Beginning - Course (21hrs)</p>
                         </div>
                         <div className="personal-item-links">
-                          <button className="btn-primary"><a href="\pdf\Modern-HTML&CSS-From-The-Begining.pdf">Certificate</a></button>
+                          <button className="btn-primary"><a href="https://drive.google.com/file/d/1wrXZnfGJrSOQX5Sv5wuBWtsMLEdyG0lk/view">Certificate</a></button>
                           <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" target="_blank" rel="noreferrer" download="Modern-HTML&CSS-From-The-Begining.pdf">Course Link</a></button>
                         </div>
                       </div>
@@ -77,7 +77,7 @@ export default function Home() {
                           <p>Web Design For Web Developers - Course (3hrs)</p>
                         </div>
                         <div className="personal-item-links">
-                          <button className="btn-primary"><a href="\pdf\Web-Design-For-Web-Developers.pdf">Certificate</a></button>
+                          <button className="btn-primary"><a href="https://drive.google.com/file/d/1tCu1O-ScM8k1VucPvk3z6--ac7pAz7kf/">Certificate</a></button>
                           <button className="btn-primary ml-1"><a href="https://www.udemy.com/course/web-design-secrets/" target="_blank" rel="noreferrer" download="Web-Design-For-Web-Developers.pdf">Course Link</a></button>
                         </div>
                       </div>
