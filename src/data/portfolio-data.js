@@ -27,7 +27,7 @@ const PortfolioData = [
         "id": 4,
         "title": "H20 Property Services",
         "tech": "Design, Logo, HTML, PHP, Bootstrap",
-        "viewSiteLink": "https://sheltered-fortress-18792.herokuapp.com/",
+        "viewSiteLink": "http://www.h2oplumbingandgas.co.uk/",
         "viewSiteCode": "https://github.com/Sean-Bradbury/H2O-PlumbingAndGas",
         "image": "../img/portfolio/h2o-website.png"
     },
