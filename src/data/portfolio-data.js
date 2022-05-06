@@ -11,7 +11,7 @@ const PortfolioData = [
         "id": 2,
         "title": "JW Trees",
         "tech": "Design, HTML, SCSS, JS, JQuery",
-        "viewSiteLink": "https://practical-heyrovsky-9cd779.netlify.app/",
+        "viewSiteLink": "https://jwtrees.netlify.app/",
         "viewSiteCode": "https://www.google.com",
         "image": "../img/portfolio/jw-website.png"
     },
@@ -35,7 +35,7 @@ const PortfolioData = [
         "id": 5,
         "title": "Slumba",
         "tech": "Design, Logo, HTML, SCSS, JS, JQuery",
-        "viewSiteLink": "https://musing-einstein-f13633.netlify.app/",
+        "viewSiteLink": "https://slumba.netlify.app/,
         "viewSiteCode": "https://github.com/Sean-Bradbury/slumba",
         "image": "../img/portfolio/slumba-website.png"
     },
