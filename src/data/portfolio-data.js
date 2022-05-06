@@ -35,7 +35,7 @@ const PortfolioData = [
         "id": 5,
         "title": "Slumba",
         "tech": "Design, Logo, HTML, SCSS, JS, JQuery",
-        "viewSiteLink": "https://slumba.netlify.app/,
+        "viewSiteLink": "https://slumba.netlify.app/",
         "viewSiteCode": "https://github.com/Sean-Bradbury/slumba",
         "image": "../img/portfolio/slumba-website.png"
     },
