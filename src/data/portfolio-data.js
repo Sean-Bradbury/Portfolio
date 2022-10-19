@@ -18,7 +18,7 @@ const PortfolioData = [
   {
     id: 3,
     title: "Interactive Comment Section",
-    tech: "React, Javascript, API, SASS, HTML",
+    tech: "React, Javascript, SASS, HTML",
     viewSiteLink: "https://sb-comment-section.netlify.app/",
     viewSiteCode:
       "https://github.com/Sean-Bradbury/Interactive_Comment_Section",
