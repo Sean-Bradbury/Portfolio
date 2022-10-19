@@ -1,43 +1,25 @@
 .next-page-link {
   position: absolute;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   bottom: 2%;
   z-index: 5;
 }
-
 .next-page-link:hover .next-page-link-text, .next-page-link:hover .next-page-link-text {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .next-page-link-text {
   text-transform: uppercase;
   color: #5DB179;
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
-
 .next-page-link-arrow {
   padding-top: 0.5rem;
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 #about .next-page-link {
   margin-left: 15%;
-}
-/*# sourceMappingURL=next-page-link.css.map */
+}/*# sourceMappingURL=next-page-link.css.map */

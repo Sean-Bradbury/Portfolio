@@ -267,7 +267,7 @@ p {
                                 background-color: $color-grey;
                             }
                         }
-                        &-to {
+                        &-from {
                             &::after {
                                 bottom: 0px;
                             }
@@ -277,9 +277,11 @@ p {
                 .timeline-content {
                     display: flex;
                     justify-content: flex-end;
+                    flex-direction: column;
                     position: relative;
                     left: 70px;
                     &-text {
+                        margin: 0;
                         padding-right: 1rem;
                         color: $color-main-green;
                     }
@@ -526,9 +528,7 @@ p {
         width: 85%;
         margin-left: 15%;
         position: relative;
-        overflow: hidden;        
-        .error-content {
-        }
+        overflow: hidden;
     }
 }
 
@@ -725,6 +725,9 @@ p {
                 height: 100%;
                 .experience-container {
                     height: 100%;
+                    li.tab-list-item.tab-list {
+                        cursor: pointer;
+                    }
                     .personal-item-links {
                         width: 100%;
                         display: flex;

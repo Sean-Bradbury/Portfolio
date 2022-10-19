@@ -1,36 +1,26 @@
 .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-bottom: 2rem;
 }
-
 .form-group label {
   padding-bottom: 0.5rem;
   color: #fff;
   font-style: italic;
   font-size: 1rem;
 }
-
 .form-group input {
   background-color: #2d2d2d;
   border: none;
   padding: 0.75rem;
   color: #fff;
 }
-
 .form-group input:valid {
   border: 1px solid #5DB179;
 }
-
 .form-group input:focus:invalid {
   border: 1px solid red;
 }
-
 .form-group textarea {
   background-color: #2d2d2d;
   border: none;
@@ -38,7 +28,6 @@
   color: #fff;
   resize: vertical;
 }
-
 .form-group .error {
   color: #5DB179;
   font-style: italic;
@@ -51,7 +40,6 @@
   color: #5DB179;
   text-transform: uppercase;
 }
-
 .btn-primary:hover {
   color: #fff;
 }
@@ -63,7 +51,6 @@
   .btn-primary {
     color: #5DB179;
     text-transform: uppercase;
-    -webkit-transition: none;
     transition: none;
     padding: 1.2rem 1.5rem;
     font-size: 1.1rem;
@@ -71,5 +58,4 @@
   .btn-primary:hover {
     background: none;
   }
-}
-/*# sourceMappingURL=contact-form.css.map */
+}/*# sourceMappingURL=contact-form.css.map */
