@@ -8,6 +8,7 @@ import Tabs from "../components/TabsComponent"
 import Fade from "react-reveal/Fade"
 
 export default function Home() {
+  const indExpTime = new Date().getFullYear() - 2011
   function createTimelineItem(item) {
     return (
       <TimelineSection
@@ -33,25 +34,22 @@ export default function Home() {
             <div className="about-content-left">
               <h1 className="heading-green">About</h1>
               <p>
-                Hi, I’m Sean Bradbury. For the past 10 years I have worked at
-                several web agencies as a search engine optimiser, senior paid
-                marketer and a team leader.
+                Hi, I’m Sean Bradbury. I have been working within the Web
+                Industry for around {indExpTime} years.
                 <br />
                 <br />
                 I have worked collaboratively with professionals from various
                 disciplines and have picked up lots of knowledge along the way.
                 <br />
                 <br />
-                I decided I wanted to switch careers and In the last two years
-                I've been working hard to get better with web development. I
-                absolutely love the constant growth I'm able to achieve through
-                this profession.
-                <br />
-                <br />
                 My analytical/logical side enjoys immersing in code, whereas my
                 artistic side loves to get creative. I revel in the challenges
                 of problem-solving and get excited by learning new technologies
                 and frameworks.
+                <br />
+                <br />
+                Right now I'm a passionate Front End Developer specialising in
+                the React Framework.
                 <br />
                 <br />
               </p>
